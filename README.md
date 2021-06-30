@@ -65,7 +65,7 @@ $ npm run test:cov
 $ docker build -t nestjsapp .
 
 # run build
-$ docker build -t nestjsapp .
+$ docker run --rm -d  -p 3000:3000/tcp nestjsapp:latest
 
 ```
 
