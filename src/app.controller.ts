@@ -15,4 +15,10 @@ export class AppController {
   getMovies(): Movie[] {
     return this.appService.getMovies();
   }
+
+  @Get('/users')
+  async getUsers(): Promise<any> {
+    return await this.appService.getUsers();
+  }
+
 }
